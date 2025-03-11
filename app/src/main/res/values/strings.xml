@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RepasoWOT</string>
+    <string name="tittle_tank">Tank</string>
+    <string name="titles_zone">Zonas</string>
 </resources>
