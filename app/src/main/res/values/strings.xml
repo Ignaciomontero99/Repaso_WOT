@@ -2,4 +2,8 @@
     <string name="app_name">RepasoWOT</string>
     <string name="tittle_tank">Tank</string>
     <string name="titles_zone">Zonas</string>
+    <string name="menu_tank">Tank</string>
+    <string name="menu_zone">Zone</string>
+    <string name="menu_fav">Favorites</string>
+    <string name="menu_main">Main</string>
 </resources>

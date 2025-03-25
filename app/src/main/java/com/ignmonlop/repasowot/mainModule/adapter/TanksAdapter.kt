@@ -37,6 +37,8 @@ class TanksAdapter(): ListAdapter<Tank, RecyclerView.ViewHolder>(TankDiffCallbac
         with(holder as ViewHolder){
             binding.nombreTank.text = tank.model
             binding.pesoTank.text = tank.weight.toString()
+            binding.manufacturerTank.text = tank.manufacturer
+            binding.countryOriginTank.text = tank.originCountry
 
             //imagen
             Glide.with(mContext)

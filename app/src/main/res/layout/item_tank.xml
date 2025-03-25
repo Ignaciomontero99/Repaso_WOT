@@ -3,41 +3,90 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/negro_carbon"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:strokeColor="@color/marron_tierra"
+    app:strokeWidth="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/common_padding_default"
-        >
+        android:padding="@dimen/common_padding_default">
+
         <ImageView
             android:id="@+id/img_tank"
             android:layout_width="0dp"
             android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:background="@color/verde_oliva"
             android:src="@drawable/ic_launcher_foreground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:id="@+id/icono_tank"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Modelo del tank -->
         <TextView
             android:id="@+id/nombre_tank"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/common_padding_default"
+            android:textColor="@color/naranja_advertencia"
+            android:textStyle="bold"
+            android:textSize="18sp"
             tools:text="Nombre Tank"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/img_tank"
-            />
+            app:layout_constraintTop_toBottomOf="@id/img_tank" />
 
+        <!-- Peso del tank -->
         <TextView
             android:id="@+id/peso_Tank"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/common_padding_default"
+            android:textColor="@color/gris_acero"
+            android:textSize="16sp"
             tools:text="3000 KG"
             app:layout_constraintStart_toEndOf="@id/nombre_tank"
-            app:layout_constraintTop_toTopOf="@id/nombre_tank"
+            app:layout_constraintTop_toTopOf="@id/nombre_tank" />
+
+        <!-- Manufacturer del tank -->
+        <TextView
+            android:id="@+id/manufacturer_Tank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_default"
+            android:textColor="@color/gris_acero"
+            android:textSize="16sp"
+            tools:text="Manufacturer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombre_tank"
+            />
+
+        <!-- OriginCountry del tank -->
+        <TextView
+            android:id="@+id/countryOrigin_Tank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_default"
+            android:textColor="@color/gris_acero"
+            android:textSize="16sp"
+            tools:text="Country Origin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/manufacturer_Tank"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
